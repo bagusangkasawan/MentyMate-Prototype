@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="dicoding:email" content="bagusasp01@gmail.com">
+  <title>MentyMate - Kesehatan Mental</title>
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">MentyMate</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#fitur">Fitur</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#manfaat">Manfaat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#chatbotModal">Chatbot</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="checkin.html">Checkin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="blog-header">
+    <div class="blog-header-pattern"></div>
+    <div class="container blog-header-content">
+      <h1 class="display-5 fw-bold mb-3">Blog MentyMate</h1>
+      <p class="fs-5 mb-4">Artikel dan edukasi untuk kesehatan mental dan kesejahteraan psikologis</p>
+    </div>
+  </header>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="category-filter">
+            <button class="filter-btn active" data-category="Semua">Semua</button>
+            <button class="filter-btn" data-category="Kesehatan Mental">Kesehatan Mental</button>
+            <button class="filter-btn" data-category="Kecanduan">Kecanduan</button>
+            <button class="filter-btn" data-category="Judi Online">Judi Online</button>
+            <button class="filter-btn" data-category="Motivasi">Motivasi</button>
+            <button class="filter-btn" data-category="Tips Kesehatan">Tips Kesehatan</button>
+          </div>
+
+          <div id="blog-list" class="row g-4">
+            <div class="col-md-6 blog-item">
+              <div class="blog-card">
+                <div class="blog-card-img" style="background-image: url('https://th.bing.com/th/id/OIP.bcqQpaZb6xruV7oHN-GhHgHaE8?rs=1&pid=ImgDetMain');"></div>
+                <div class="blog-card-body">
+                  <span class="blog-category">Judi Online</span>
+                  <span class="blog-category">Kesehatan Mental</span>
+                  <span class="blog-date"><i class="far fa-calendar-alt me-1"></i> 15 Mei 2025</span>
+                  <h3 class="blog-title h5">Dampak Judi Online pada Kesehatan Mental dan Cara Mengatasinya</h3>
+                  <p class="mb-3">Judi online dapat menimbulkan dampak serius pada kesehatan mental termasuk kecemasan, depresi, dan kecanduan. Pelajari tanda-tanda dan cara mengatasinya.</p>
+                  <a href="#article-judi-online" class="btn btn-sm btn-primary-custom">Baca Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 blog-item">
+              <div class="blog-card">
+                <div class="blog-card-img" style="background-image: url('https://th.bing.com/th/id/OIP.kVos-xQ5plpJYhTq1Y7m0AHaE7?rs=1&pid=ImgDetMain');"></div>
+                <div class="blog-card-body">
+                  <span class="blog-category">Kecanduan</span>
+                  <span class="blog-category">Kesehatan Mental</span>
+                  <span class="blog-date"><i class="far fa-calendar-alt me-1"></i> 10 Mei 2025</span>
+                  <h3 class="blog-title h5">Mengenali Tanda-tanda Kecanduan dalam Diri dan Orang Terdekat</h3>
+                  <p class="mb-3">Kecanduan dapat bersembunyi di balik kebiasaan sehari-hari. Pelajari cara mengenali tanda-tanda peringatan dini dan pentingnya intervensi awal.</p>
+                  <a href="#article-kecanduan" class="btn btn-sm btn-primary-custom">Baca Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 blog-item">
+              <div class="blog-card">
+                <div class="blog-card-img" style="background-image: url('https://th.bing.com/th/id/OIP.CO6PPi6NolSR_gJjl7tvyAHaEo?rs=1&pid=ImgDetMain');"></div>
+                <div class="blog-card-body">
+                  <span class="blog-category">Mindfulness</span>
+                  <span class="blog-category">Tips Kesehatan</span>
+                  <span class="blog-date"><i class="far fa-calendar-alt me-1"></i> 5 Mei 2025</span>
+                  <h3 class="blog-title h5">5 Teknik Mindfulness untuk Mengatasi Kecemasan dan Stres</h3>
+                  <p class="mb-3">Praktik mindfulness bisa menjadi alat efektif untuk mengelola kecemasan dan stres. Pelajari 5 teknik sederhana yang dapat dilakukan sehari-hari.</p>
+                  <a href="#article-mindfulness" class="btn btn-sm btn-primary-custom">Baca Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 blog-item">
+              <div class="blog-card">
+                <div class="blog-card-img" style="background-image: url('https://th.bing.com/th/id/OIP.VVXFotFDeK5YHn6hk0eTbwHaDt?rs=1&pid=ImgDetMain');"></div>
+                <div class="blog-card-body">
+                  <span class="blog-category">Kesehatan Mental</span>
+                  <span class="blog-category">Tips Kesehatan</span>
+                  <span class="blog-date"><i class="far fa-calendar-alt me-1"></i> 1 Mei 2025</span>
+                  <h3 class="blog-title h5">Memahami Gangguan Kecemasan: Jenis, Gejala, dan Penanganannya</h3>
+                  <p class="mb-3">Gangguan kecemasan adalah kondisi umum yang dapat mempengaruhi kualitas hidup. Pelajari berbagai jenis, gejala, dan pilihan pengobatan yang tersedia.</p>
+                  <a href="#article-kecemasan" class="btn btn-sm btn-primary-custom">Baca Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 blog-item">
+              <div class="blog-card">
+                <div class="blog-card-img" style="background-image: url('https://th.bing.com/th/id/OIP.utv8gUh5fG9njDTixRSNDQHaEo?rs=1&pid=ImgDetMain');"></div>
+                <div class="blog-card-body">
+                  <span class="blog-category">Kecanduan</span>
+                  <span class="blog-category">Motivasi</span>
+                  <span class="blog-date"><i class="far fa-calendar-alt me-1"></i> 25 April 2025</span>
+                  <h3 class="blog-title h5">Perjalanan Rehabilitasi: Tahapan Pemulihan dari Kecanduan</h3>
+                  <p class="mb-3">Pemulihan dari kecanduan adalah sebuah perjalanan yang penuh tantangan, bukan sekadar tujuan. Pelajari tahapan-tahapan penting dalam proses rehabilitasi dan faktor pendukung keberhasilan.</p>
+                  <a href="#article-rehabilitasi" class="btn btn-sm btn-primary-custom">Baca Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 blog-item">
+              <div class="blog-card">
+                <div class="blog-card-img" style="background-image: url('https://th.bing.com/th/id/OIP._gvTrQBJGb35CXBbjazaKgHaDn?rs=1&pid=ImgDetMain');"></div>
+                <div class="blog-card-body">
+                  <span class="blog-category">Kesehatan Mental</span>
+                  <span class="blog-category">Motivasi</span>
+                  <span class="blog-date"><i class="far fa-calendar-alt me-1"></i> 20 April 2025</span>
+                  <h3 class="blog-title h5">Peran Dukungan Keluarga dalam Kesehatan Mental</h3>
+                  <p class="mb-3">Dukungan keluarga sangat penting dalam proses pemulihan kesehatan mental. Pelajari cara mendukung anggota keluarga yang sedang berjuang dengan masalah kesehatan mental.</p>
+                  <a href="#article-dukungan-keluarga" class="btn btn-sm btn-primary-custom">Baca Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <nav aria-label="Pagination" class="mt-5">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item disabled">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="sidebar mb-4">
+            <h4 class="sidebar-title">Cari Artikel</h4>
+            <div class="input-group">
+              <input type="text" id="searchInput" class="form-control" placeholder="Kata kunci..." onkeyup="filterArticles()">
+            </div>
+          </div>
+
+          <div class="sidebar mb-4">
+            <h4 class="sidebar-title">Artikel Populer</h4>
+            <ul class="sidebar-list">
+              <li>
+                <a href="#article-judi-online">Dampak Judi Online pada Kesehatan Mental</a>
+                <small class="d-block text-muted">15 Mei 2025</small>
+              </li>
+              <li>
+                <a href="#article-kecanduan">Mengenali Tanda-tanda Kecanduan</a>
+                <small class="d-block text-muted">10 Mei 2025</small>
+              </li>
+              <li>
+                <a href="#article-mindfulness">5 Teknik Mindfulness untuk Mengatasi Kecemasan</a>
+                <small class="d-block text-muted">5 Mei 2025</small>
+              </li>
+              <li>
+                <a href="#article-kecemasan">Memahami Gangguan Kecemasan</a>
+                <small class="d-block text-muted">1 Mei 2025</small>
+              </li>
+              <li>
+                <a href="#article-dukungan-keluarga">Peran Dukungan Keluarga dalam Kesehatan Mental</a>
+                <small class="d-block text-muted">20 April 2025</small>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sidebar mb-4">
+            <h4 class="sidebar-title">Kategori</h4>
+            <ul class="sidebar-list">
+              <li><a href="#" class="sidebar-category" data-category="Kesehatan Mental">Kesehatan Mental <span class="badge bg-light text-dark">4</span></a></li>
+              <li><a href="#" class="sidebar-category" data-category="Kecanduan">Kecanduan <span class="badge bg-light text-dark">2</span></a></li>
+              <li><a href="#" class="sidebar-category" data-category="Tips Kesehatan">Tips Kesehatan <span class="badge bg-light text-dark">2</span></a></li>
+              <li><a href="#" class="sidebar-category" data-category="Motivasi">Motivasi <span class="badge bg-light text-dark">2</span></a></li>
+              <li><a href="#" class="sidebar-category" data-category="Judi Online">Judi Online <span class="badge bg-light text-dark">1</span></a></li>
+              <li><a href="#" class="sidebar-category" data-category="Mindfulness">Mindfulness <span class="badge bg-light text-dark">1</span></a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar mb-4">
+            <h4 class="sidebar-title">Sumber Bantuan</h4>
+            <div class="d-grid gap-2">
+              <a href="tel:021-500-454" class="btn btn-outline-secondary" target="_blank">
+                <i class="fas fa-phone-alt me-2"></i>Hotline Kesehatan Jiwa Kemenkes
+              </a>
+              <a href="https://www.halodoc.com/tanya-dokter" class="btn btn-outline-secondary" target="_blank">
+                <i class="fas fa-user-md me-2"></i>Konsultasi dengan Profesional
+              </a>
+              <a href="https://www.alodokter.com/search?s=Kesehatan+Mental" class="btn btn-outline-secondary" target="_blank">
+                <i class="fas fa-book me-2"></i>Artikel & Panduan Self-Help
+              </a>
+              <a href="https://www.yayasanpulih.org/" class="btn btn-outline-secondary" target="_blank">
+                <i class="fas fa-hands-helping me-2"></i>Support Group
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Article Content - Judi Online -->
+  <section id="article-judi-online" class="pb-5 bg-light-custom d-none">
+    <div class="container">
+      <div class="article-container">
+        <a href="#" class="btn btn-sm btn-outline-secondary mb-3 back-to-blog">
+          <i class="fas fa-arrow-left me-1"></i> Kembali ke Blog
+        </a>
+        <img src="https://th.bing.com/th/id/OIP.bcqQpaZb6xruV7oHN-GhHgHaE8?rs=1&pid=ImgDetMain" alt="Dampak Judi Online" class="article-image">
+        <span class="blog-category">Judi Online</span>
+        <span class="blog-category">Kesehatan Mental</span>
+        <h1 class="text-primary-custom mb-3">Dampak Judi Online pada Kesehatan Mental dan Cara Mengatasinya</h1>
+        <div class="article-meta">
+          <i class="far fa-calendar-alt me-1"></i> 15 Mei 2025
+          <i class="far fa-user ms-3 me-1"></i> Dr. Anita Wijaya
+          <i class="far fa-clock ms-3 me-1"></i> 8 menit membaca
+        </div>
+        <div class="article-content">
+          <p>Perkembangan teknologi dan akses internet yang semakin luas telah membuka pintu bagi berbagai aktivitas online, termasuk judi online. Meskipun mungkin tampak sebagai hiburan yang tidak berbahaya, judi online dapat menimbulkan dampak serius bagi kesehatan mental. Artikel ini akan membahas dampak judi online terhadap kesehatan mental dan memberikan strategi untuk mengatasinya.</p>
+
+          <h2>Dampak Judi Online pada Kesehatan Mental</h2>
+          
+          <h3>1. Kecanduan dan Perilaku Kompulsif</h3>
+          <p>Judi online dirancang untuk membuat pengguna terus bermain. Sistem hadiah acak dan notifikasi yang terus muncul dapat memicu kecanduan dan perilaku kompulsif, yang pada akhirnya mengganggu keseharian dan kesehatan emosional.</p>
+          
+          <h3>2. Stres dan Kecemasan</h3>
+          <p>Tuntutan untuk menang dan kekhawatiran akan kerugian finansial menimbulkan tingkat stres yang tinggi. Hal ini sering kali berujung pada kecemasan yang berkepanjangan dan gangguan tidur.</p>
+
+          <h3>3. Isolasi Sosial</h3>
+          <p>Waktu yang dihabiskan di dunia virtual dapat mengurangi interaksi dengan keluarga dan teman, menyebabkan perasaan kesepian dan isolasi yang berdampak negatif pada kesehatan mental.</p>
+
+          <h2>Strategi Mengatasi Dampak Judi Online</h2>
+          
+          <h3>1. Meningkatkan Kesadaran Diri</h3>
+          <p>Mengenali tanda-tanda awal kecanduan dan dampak negatifnya adalah langkah pertama untuk mencegahnya berkembang lebih jauh. Refleksi diri dan evaluasi kebiasaan bermain sangat penting.</p>
+          
+          <h3>2. Mencari Dukungan</h3>
+          <p>Bicaralah dengan keluarga, teman, atau profesional kesehatan mental. Dukungan sosial dapat membantu mengurangi tekanan dan menyediakan solusi yang konstruktif.</p>
+          
+          <h3>3. Menerapkan Batasan Waktu</h3>
+          <p>Menetapkan batasan waktu dalam mengakses situs judi online dapat mengurangi risiko kecanduan dan membantu menjaga keseimbangan kehidupan.</p>
+
+          <p>Kesehatan mental merupakan aset berharga yang memerlukan perhatian. Dengan pengelolaan yang tepat, dampak negatif dari judi online dapat diminimalisir sehingga seseorang dapat menjalani kehidupan yang lebih seimbang dan bermakna.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Article Content - Mengenali Kecanduan -->
+  <section id="article-kecanduan" class="pb-5 bg-light-custom d-none">
+    <div class="container">
+      <div class="article-container">
+        <a href="#" class="btn btn-sm btn-outline-secondary mb-3 back-to-blog">
+          <i class="fas fa-arrow-left me-1"></i> Kembali ke Blog
+        </a>
+        <img src="https://th.bing.com/th/id/OIP.kVos-xQ5plpJYhTq1Y7m0AHaE7?rs=1&pid=ImgDetMain" alt="Mengenali Tanda-tanda Kecanduan" class="article-image">
+        <span class="blog-category">Kecanduan</span>
+        <span class="blog-category">Kesehatan Mental</span>
+        <h1 class="text-primary-custom mb-3">Mengenali Tanda-tanda Kecanduan dalam Diri dan Orang Terdekat</h1>
+        <div class="article-meta">
+          <i class="far fa-calendar-alt me-1"></i> 10 Mei 2025
+          <i class="far fa-user ms-3 me-1"></i> Dr. Budi Santoso
+          <i class="far fa-clock ms-3 me-1"></i> 7 menit membaca
+        </div>
+        <div class="article-content">
+          <p>Kecanduan adalah kondisi kompleks yang dapat memengaruhi siapa saja. Mengenali tanda-tanda awal sangat penting untuk intervensi dini dan pemulihan yang efektif. Artikel ini membahas gejala umum kecanduan dan langkah-langkah untuk mengatasinya.</p>
+          <h2>Tanda-tanda Umum Kecanduan</h2>
+
+          <h3>1. Ketidakmampuan Mengontrol Perilaku</h3>
+          <p>Seseorang yang kecanduan sering kali kesulitan menghentikan perilaku tertentu meskipun menyadari dampak negatifnya.</p>
+
+          <h3>2. Perubahan Mood dan Perilaku</h3>
+          <p>Perubahan suasana hati yang drastis, mudah marah, atau depresi dapat menjadi indikator kecanduan.</p>
+
+          <h3>3. Penarikan Diri dari Sosial</h3>
+          <p>Menjauh dari keluarga dan teman, serta kehilangan minat pada aktivitas yang sebelumnya disukai, bisa menjadi tanda peringatan.</p>
+
+          <h2>Langkah Mengatasi Kecanduan</h2>
+
+          <h3>1. Kesadaran dan Pengakuan</h3>
+          <p>Mengakui adanya masalah adalah langkah pertama menuju pemulihan.</p>
+
+          <h3>2. Mencari Dukungan Profesional</h3>
+          <p>Konsultasi dengan psikolog atau psikiater dapat membantu merancang strategi pemulihan yang tepat.</p>
+
+          <h3>3. Dukungan Sosial</h3>
+          <p>Dukungan dari keluarga dan teman sangat penting dalam proses pemulihan.</p>
+
+          <p>Mengenali dan mengatasi kecanduan memerlukan keberanian dan dukungan. Dengan langkah yang tepat, pemulihan adalah hal yang mungkin dicapai.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Article Content - Mindfulness -->
+  <section id="article-mindfulness" class="pb-5 bg-light-custom d-none">
+    <div class="container">
+      <div class="article-container">
+        <a href="#" class="btn btn-sm btn-outline-secondary mb-3 back-to-blog">
+          <i class="fas fa-arrow-left me-1"></i> Kembali ke Blog
+        </a>
+        <img src="https://th.bing.com/th/id/OIP.CO6PPi6NolSR_gJjl7tvyAHaEo?rs=1&pid=ImgDetMain" alt="5 Teknik Mindfulness" class="article-image">
+        <span class="blog-category">Mindfulness</span>
+        <span class="blog-category">Tips Kesehatan</span>
+        <h1 class="text-primary-custom mb-3">5 Teknik Mindfulness untuk Mengatasi Kecemasan dan Stres</h1>
+        <div class="article-meta">
+          <i class="far fa-calendar-alt me-1"></i> 5 Mei 2025
+          <i class="far fa-user ms-3 me-1"></i> Dr. Siti Nurhaliza
+          <i class="far fa-clock ms-3 me-1"></i> 6 menit membaca
+        </div>
+        <div class="article-content">
+          <p>Mindfulness adalah teknik yang efektif untuk mengelola stres dan kecemasan. Berikut lima teknik sederhana yang dapat Anda praktikkan sehari-hari.</p>
+          <h2>1. Meditasi Pernapasan</h2>
+          <p>Fokus pada napas Anda, tarik dan hembuskan secara perlahan untuk menenangkan pikiran.</p>
+
+          <h2>2. Pemindaian Tubuh</h2>
+          <p>Perhatikan sensasi di setiap bagian tubuh Anda untuk meningkatkan kesadaran diri.</p>
+
+          <h2>3. Latihan Kesadaran Indra</h2>
+          <p>Amati apa yang Anda lihat, dengar, rasakan, cium, dan kecap untuk membawa perhatian ke saat ini.</p>
+
+          <h2>4. Menulis Jurnal</h2>
+          <p>Catat perasaan dan pikiran Anda untuk memahami dan mengelola emosi dengan lebih baik.</p>
+
+          <h2>5. Latihan Syukur</h2>
+          <p>Setiap hari, pikirkan tiga hal yang Anda syukuri untuk meningkatkan kebahagiaan dan kesejahteraan.</p>
+
+          <p>Dengan rutin mempraktikkan teknik-teknik ini, Anda dapat meningkatkan kualitas hidup dan kesejahteraan mental Anda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Article Content - Gangguan Kecemasan -->
+  <section id="article-kecemasan" class="pb-5 bg-light-custom d-none">
+    <div class="container">
+      <div class="article-container">
+        <a href="#" class="btn btn-sm btn-outline-secondary mb-3 back-to-blog">
+          <i class="fas fa-arrow-left me-1"></i> Kembali ke Blog
+        </a>
+        <img src="https://th.bing.com/th/id/OIP.VVXFotFDeK5YHn6hk0eTbwHaDt?rs=1&pid=ImgDetMain" alt="Memahami Gangguan Kecemasan" class="article-image">
+        <span class="blog-category">Kesehatan Mental</span>
+        <span class="blog-category">Tips Kesehatan</span>
+        <h1 class="text-primary-custom mb-3">Memahami Gangguan Kecemasan: Jenis, Gejala, dan Penanganannya</h1>
+        <div class="article-meta">
+          <i class="far fa-calendar-alt me-1"></i> 1 Mei 2025
+          <i class="far fa-user ms-3 me-1"></i> Dr. Ahmad Fauzi
+          <i class="far fa-clock ms-3 me-1"></i> 8 menit membaca
+        </div>
+        <div class="article-content">
+          <p>Gangguan kecemasan adalah kondisi mental yang umum namun sering disalahpahami. Artikel ini membahas jenis-jenis gangguan kecemasan, gejala, dan cara penanganannya.</p>
+          <h2>Jenis-Jenis Gangguan Kecemasan</h2>
+
+          <h3>1. Gangguan Kecemasan Umum (GAD)</h3>
+          <p>Ditandai dengan kekhawatiran berlebihan terhadap berbagai aspek kehidupan sehari-hari.</p>
+
+          <h3>2. Gangguan Panik</h3>
+          <p>Serangan panik tiba-tiba yang disertai gejala fisik seperti detak jantung cepat dan sesak napas.</p>
+
+          <h3>3. Fobia Spesifik</h3>
+          <p>Ketakutan berlebihan terhadap objek atau situasi tertentu, seperti ketinggian atau hewan tertentu.</p>
+
+          <h2>Gejala Umum Gangguan Kecemasan</h2>
+          <ul>
+            <li>Perasaan gelisah atau tegang</li>
+            <li>Kesulitan tidur</li>
+            <li>Kesulitan berkonsentrasi</li>
+            <li>Ketegangan otot</li>
+          </ul>
+
+          <h2>Penanganan Gangguan Kecemasan</h2>
+
+          <h3>1. Terapi Psikologis</h3>
+          <p>Terapi kognitif perilaku (CBT) efektif dalam mengubah pola pikir negatif.</p>
+
+          <h3>2. Pengobatan</h3>
+          <p>Obat anti-kecemasan atau antidepresan dapat diresepkan oleh dokter untuk membantu mengelola gejala.</p>
+
+          <h3>3. Teknik Relaksasi</h3>
+          <p>Latihan pernapasan, meditasi, dan yoga dapat membantu meredakan kecemasan.</p>
+
+          <p>Penting untuk mencari bantuan profesional jika Anda mengalami gejala gangguan kecemasan. Dengan penanganan yang tepat, kondisi ini dapat dikelola dengan efektif.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Article Content - Rehabilitasi Kecanduan -->
+  <section id="article-rehabilitasi" class="pb-5 bg-light-custom d-none">
+    <div class="container">
+      <div class="article-container">
+        <a href="#" class="btn btn-sm btn-outline-secondary mb-3 back-to-blog">
+          <i class="fas fa-arrow-left me-1"></i> Kembali ke Blog
+        </a>
+        <img src="https://th.bing.com/th/id/OIP.utv8gUh5fG9njDTixRSNDQHaEo?rs=1&pid=ImgDetMain" alt="Proses Rehabilitasi" class="article-image">
+        <span class="blog-category">Rehabilitasi</span>
+        <span class="blog-category">Kecanduan</span>
+        <h1 class="text-primary-custom mb-3">Proses Rehabilitasi: Jalan Menuju Pemulihan dari Kecanduan</h1>
+        <div class="article-meta">
+          <i class="far fa-calendar-alt me-1"></i> 28 April 2025
+          <i class="far fa-user ms-3 me-1"></i> Dr. Rina Kurniawati
+          <i class="far fa-clock ms-3 me-1"></i> 7 menit membaca
+        </div>
+        <div class="article-content">
+          <p>Rehabilitasi adalah proses penting dalam pemulihan dari kecanduan. Artikel ini membahas tahap-tahap rehabilitasi dan bagaimana dukungan yang tepat dapat mempercepat proses penyembuhan.</p>
+          <h2>Tahapan Rehabilitasi</h2>
+
+          <h3>1. Detoksifikasi</h3>
+          <p>Tahap awal untuk mengeluarkan zat adiktif dari tubuh. Proses ini harus dilakukan di bawah pengawasan medis.</p>
+
+          <h3>2. Terapi Psikososial</h3>
+          <p>Membantu individu memahami penyebab kecanduan dan mengembangkan mekanisme koping yang sehat.</p>
+
+          <h3>3. Reintegrasi Sosial</h3>
+          <p>Persiapan individu untuk kembali ke masyarakat dengan keterampilan hidup yang memadai.</p>
+
+          <h2>Jenis Layanan Rehabilitasi</h2>
+          <ul>
+            <li>Rehabilitasi Rawat Inap</li>
+            <li>Rehabilitasi Rawat Jalan</li>
+            <li>Komunitas Terapeutik</li>
+          </ul>
+
+          <p>Dukungan keluarga dan lingkungan sangat penting dalam proses ini. Dengan rehabilitasi yang tepat, pemulihan bukan hanya mungkin, tapi juga berkelanjutan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Article Content - Dukungan Keluarga -->
+  <section id="article-dukungan-keluarga" class="pb-5 bg-light-custom d-none">
+    <div class="container">
+      <div class="article-container">
+        <a href="#" class="btn btn-sm btn-outline-secondary mb-3 back-to-blog">
+          <i class="fas fa-arrow-left me-1"></i> Kembali ke Blog
+        </a>
+        <img src="https://th.bing.com/th/id/OIP._gvTrQBJGb35CXBbjazaKgHaDn?rs=1&pid=ImgDetMain" alt="Dukungan Keluarga" class="article-image">
+        <span class="blog-category">Kesehatan Mental</span>
+        <span class="blog-category">Motivasi</span>
+        <h1 class="text-primary-custom mb-3">Peran Dukungan Keluarga dalam Kesehatan Mental</h1>
+        <div class="article-meta">
+          <i class="far fa-calendar-alt me-1"></i> 20 April 2025
+          <i class="far fa-user ms-3 me-1"></i> Dr. Tania Maharani
+          <i class="far fa-clock ms-3 me-1"></i> 6 menit membaca
+        </div>
+        <div class="article-content">
+          <p>Kesehatan mental adalah fondasi penting dalam kehidupan seseorang, dan peran keluarga dalam menjaga dan mendukung kesehatan mental tidak dapat diremehkan. Kehadiran keluarga yang peduli dan memahami dapat mempercepat proses pemulihan dan meningkatkan kualitas hidup penderita gangguan mental.</p>
+
+          <h2>1. Dukungan Emosional</h2>
+          <p>Memberikan rasa aman, cinta, dan penerimaan tanpa syarat adalah bentuk dukungan emosional yang sangat membantu individu yang sedang berjuang. Mendengarkan tanpa menghakimi juga menjadi langkah awal yang efektif.</p>
+
+          <h2>2. Menjadi Sistem Pendukung</h2>
+          <p>Keluarga bisa membantu dalam hal-hal praktis seperti mengingatkan jadwal terapi, menemani ke sesi konseling, atau hanya sekadar hadir ketika dibutuhkan.</p>
+
+          <h2>3. Edukasi tentang Kesehatan Mental</h2>
+          <p>Meningkatkan literasi keluarga tentang gangguan mental dapat mengurangi stigma dan memperkuat kemampuan mereka dalam menangani krisis dengan bijak.</p>
+          
+          <h2>4. Komunikasi Terbuka</h2>
+          <p>Komunikasi yang jujur dan terbuka memperkuat kepercayaan dan membuat individu merasa dihargai serta tidak sendirian dalam perjuangannya.</p>
+
+          <h2>5. Hindari Sikap Menghakimi</h2>
+          <p>Kritik atau tekanan justru bisa memperburuk kondisi. Sebaliknya, menunjukkan empati dan kesabaran akan jauh lebih membantu.</p>
+
+          <div class="feature-description text-center mb-4">
+            <blockquote class="blockquote">"Keluarga bukan hanya tempat pulang, tetapi juga tempat penyembuhan." – Dr. Tania Maharani</blockquote>
+          </div>
+
+          <p>Dengan kehadiran keluarga yang suportif, seseorang yang mengalami gangguan mental memiliki peluang lebih besar untuk pulih dan kembali menjalani kehidupan dengan lebih baik. Mari kita mulai dari rumah – menjadi tempat yang aman dan penuh kasih.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <h3 class="mb-3">MentyMate</h3>
+          <p>Teman virtual untuk kesehatan mental yang lebih baik.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <p>© 2025 MentyMate. Hak Cipta Dilindungi.</p>
+          <p>Dibuat dengan <i class="fas fa-heart text-accent-custom"></i> untuk kesehatan mental yang lebih baik.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="chatbotModal" tabindex="-1" aria-labelledby="chatbotModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header chat-header">
+          <div class="chat-header-icon">
+            <i class="fas fa-comment-dots"></i>
+          </div>
+          <div>
+            <h5 class="modal-title" id="chatbotModalLabel">MentyMate Chatbot</h5>
+            <small>Online</small>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="chat-box" id="chat-box">
+            <div class="chat-message ai-message">
+              <strong>MentyMate:</strong> Halo! Saya MentyMate, asisten kesehatan mental virtualmu. Bagaimana perasaanmu hari ini? Ada yang bisa saya bantu?
+            </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <div class="chat-input-container">
+            <textarea class="chat-input" id="user-input" placeholder="Ketik pesanmu di sini..." rows="1"></textarea>
+            <button class="btn btn-secondary-custom chat-send-btn" id="send-button">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        
+  <script>
+    function filterArticles() {
+      const keyword = document.getElementById('searchInput').value.toLowerCase();
+      const blogItems = document.querySelectorAll('#blog-list .blog-item');
+
+      blogItems.forEach(item => {
+        const title = item.querySelector('.blog-title').textContent.toLowerCase();
+        if (title.includes(keyword)) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+  </script>
+  <script src="assets/scripts.js"></script>
+</body>
+</html>
