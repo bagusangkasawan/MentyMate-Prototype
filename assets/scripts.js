@@ -251,7 +251,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
             if (!pageLinkActivated && isAtRootPage) {
-                const homeLink = document.querySelector('.navbar-nav .nav-link[href="#home"]');
+                const homeLink = document.querySelector('.navbar-nav .nav-link[href="#home"], .navbar-nav .nav-link[href="/#home"]');
                 if (homeLink && !homeLink.getAttribute('data-bs-toggle') && homeLink !== chatbotNavLink) {
                     navLinks.forEach(nav => {
                         if (nav !== homeLink && nav !== chatbotNavLink) {
@@ -303,7 +303,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         if (!activeLinkSetByScroll && isAtRootPage) {
-            const homeLink = document.querySelector('.navbar-nav .nav-link[href="#home"]');
+            const homeLink = document.querySelector('.navbar-nav .nav-link[href="#home"], .navbar-nav .nav-link[href="/#home"]');
             if (homeLink && !homeLink.getAttribute('data-bs-toggle') && homeLink !== chatbotNavLink) {
                 let anotherLinkIsActive = false;
                 navLinks.forEach(nav => {
