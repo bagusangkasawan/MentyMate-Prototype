@@ -223,6 +223,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function updateActiveNavLink() {
+        const path = window.location.pathname;
+        const isAtRootPage = path === '/MentyMate-Prototype' || path === '/MentyMate-Prototype/' || path.endsWith('/index.html');
+
         const chatbotModalIsOpen = chatbotModalElement && chatbotModalElement.classList.contains('show');
 
         if (chatbotModalIsOpen && chatbotNavLink) {
@@ -231,7 +234,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        if (sections.length > 0 && (window.location.pathname === '/' || window.location.pathname.endsWith('index.html'))) {
+        if (sections.length > 0 && isAtRootPage) {
             changeNavOnScroll(); 
         } else {
             let pageLinkActivated = false;
@@ -248,7 +251,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     pageLinkActivated = true;
                 }
             });
-            if (!pageLinkActivated && (window.location.pathname.endsWith('/MentyMate-Prototype') || window.location.pathname.endsWith('index.html'))) {
+            if (!pageLinkActivated && isAtRootPage) {
                 const homeLink = document.querySelector('.navbar-nav .nav-link[href="#home"]');
                 if (homeLink && !homeLink.getAttribute('data-bs-toggle') && homeLink !== chatbotNavLink) {
                     navLinks.forEach(nav => {
