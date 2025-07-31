@@ -248,7 +248,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     pageLinkActivated = true;
                 }
             });
-            if (!pageLinkActivated && (window.location.pathname === '/' || window.location.pathname.endsWith('index.html'))) {
+            if (!pageLinkActivated && (window.location.pathname === '/MentyMate-Prototype' || window.location.pathname.endsWith('index.html'))) {
                 const homeLink = document.querySelector('.navbar-nav .nav-link[href="#home"]');
                 if (homeLink && !homeLink.getAttribute('data-bs-toggle') && homeLink !== chatbotNavLink) {
                     navLinks.forEach(nav => {
