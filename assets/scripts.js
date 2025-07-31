@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll("section[id]"); // Sections for scrollspy
     const navbar = document.querySelector('.navbar.sticky-top'); // Target the main sticky navbar
     const navbarHeight = navbar ? navbar.offsetHeight : 70;
+    const path = window.location.pathname;
+    const isAtRootPage = path === '/MentyMate-Prototype' || path === '/MentyMate-Prototype/' || path.endsWith('/index.html');
 
     const chatbotModalElement = document.getElementById('chatbotModal');
     const chatbotNavLink = document.querySelector('.nav-link[data-bs-target="#chatbotModal"], .nav-link[href="#chatbotModal"]');
@@ -223,9 +225,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function updateActiveNavLink() {
-        const path = window.location.pathname;
-        const isAtRootPage = path === '/MentyMate-Prototype' || path === '/MentyMate-Prototype/' || path.endsWith('/index.html');
-
         const chatbotModalIsOpen = chatbotModalElement && chatbotModalElement.classList.contains('show');
 
         if (chatbotModalIsOpen && chatbotNavLink) {
@@ -303,7 +302,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
-        if (!activeLinkSetByScroll && (window.location.pathname === '/' || window.location.pathname.endsWith('index.html'))) {
+        if (!activeLinkSetByScroll && isAtRootPage) {
             const homeLink = document.querySelector('.navbar-nav .nav-link[href="#home"]');
             if (homeLink && !homeLink.getAttribute('data-bs-toggle') && homeLink !== chatbotNavLink) {
                 let anotherLinkIsActive = false;
@@ -380,7 +379,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    if (sections.length > 0 && (window.location.pathname === '/' || window.location.pathname.endsWith('index.html'))) {
+    if (sections.length > 0 && isAtRootPage) {
         window.addEventListener("scroll", changeNavOnScroll);
     }
     updateActiveNavLink(); 
