@@ -8,8 +8,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll("section[id]"); // Sections for scrollspy
     const navbar = document.querySelector('.navbar.sticky-top'); // Target the main sticky navbar
     const navbarHeight = navbar ? navbar.offsetHeight : 70;
-    const path = window.location.pathname;
-    const isAtRootPage = path === '/MentyMate-Prototype' || path === '/MentyMate-Prototype/' || path.endsWith('/index.html');
+    const path = window.location.pathname.replace(/\/+$/, '');
+    const isAtRootPage =
+        path === '' ||
+        path === '/' ||
+        path === '/MentyMate-Prototype' ||
+        path === '/MentyMate-Prototype/index.html';
 
     const chatbotModalElement = document.getElementById('chatbotModal');
     const chatbotNavLink = document.querySelector('.nav-link[data-bs-target="#chatbotModal"], .nav-link[href="#chatbotModal"]');
