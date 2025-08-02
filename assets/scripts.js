@@ -1076,4 +1076,11 @@ document.addEventListener("DOMContentLoaded", function () {
         currentUserPhone = sessionStorage.getItem('userPhone'); // Ambil data telepon dari session
         updateUIForAuthState();
     });
+
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+            .register('/MentyMate-Prototype/service-worker.js')
+            .then(() => console.log('Service Worker registered'))
+            .catch(err => console.error('SW registration failed:', err));
+    }
 });
