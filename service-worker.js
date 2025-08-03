@@ -2,12 +2,12 @@ const CACHE_NAME = "mentymate-v1";
 const urlsToCache = [
   "/MentyMate-Prototype/",
   "/MentyMate-Prototype/index.html",
+  "/MentyMate-Prototype/blog.html",
+  "/MentyMate-Prototype/checkin.html",
   "/MentyMate-Prototype/manifest.json",
   "/MentyMate-Prototype/assets/styles.css",
   "/MentyMate-Prototype/assets/scripts.js",
-  "/MentyMate-Prototype/assets/icon.png",
-  "/MentyMate-Prototype/assets/icons/icon-192.png",
-  "/MentyMate-Prototype/assets/icons/icon-512.png"
+  "/MentyMate-Prototype/assets/icon.png"
 ];
 
 self.addEventListener("install", event => {
