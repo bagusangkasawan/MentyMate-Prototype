@@ -575,7 +575,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Modal Edit Grup
     const editGroupModalEl = document.getElementById('editGroupModal');
-    const editGroupModal = new bootstrap.Modal(editGroupModalEl);
+    const editGroupModal = bootstrap.Modal.getOrCreateInstance(editGroupModalEl);
     const editGroupFormModal = document.getElementById('editGroupFormModal');
     const editGroupIdInput = document.getElementById('editGroupIdInput');
     const editGroupNameInput = document.getElementById('editGroupNameInput');
