@@ -7,6 +7,7 @@ const urlsToCache = [
   "/MentyMate-Prototype/manifest.json",
   "/MentyMate-Prototype/assets/styles.css",
   "/MentyMate-Prototype/assets/scripts.js",
+  "/MentyMate-Prototype/assets/checkins.js",
   "/MentyMate-Prototype/assets/icon.png"
 ];
 
