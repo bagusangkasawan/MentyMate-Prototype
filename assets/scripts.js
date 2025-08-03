@@ -582,8 +582,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const editGroupNameInput = document.getElementById('editGroupNameInput');
 
     // Modal Kelola Anggota
-    const manageMembersModalEl = document.getElementById('manageMembersModal');
-    const manageMembersModal = new bootstrap.Modal(manageMembersModalEl);
+    const manageMembersModal = document.getElementById('manageMembersModal')
+        ? new bootstrap.Modal(document.getElementById('manageMembersModal'))
+        : null;
     const manageMembersModalTitle = document.getElementById('manageMembersModalTitle');
     const memberList = document.getElementById('memberList');
     const addMemberFormInModal = document.getElementById('addMemberFormInModal');
