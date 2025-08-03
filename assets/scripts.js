@@ -516,8 +516,7 @@ document.addEventListener("DOMContentLoaded", function () {
         currentUserToken = sessionStorage.getItem('authToken');
         currentUsername = sessionStorage.getItem('username');
         currentUserId = sessionStorage.getItem('userId');
-        currentUserPhone = sessionStorage.getItem('userPhone'); // Ambil data telepon dari session
-        updateUIForAuthState();
+        currentUserPhone = sessionStorage.getItem('userPhone');
     });
 
     if ('serviceWorker' in navigator) {

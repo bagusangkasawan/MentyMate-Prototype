@@ -679,4 +679,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 '<p class="text-danger">Gagal memuat riwayat check-in.</p>';
         }
     }
+
+    window.addEventListener('DOMContentLoaded', () => {
+        currentUserToken = sessionStorage.getItem('authToken');
+        currentUsername = sessionStorage.getItem('username');
+        currentUserId = sessionStorage.getItem('userId');
+        currentUserPhone = sessionStorage.getItem('userPhone'); // Ambil data telepon dari session
+        updateUIForAuthState();
+    });
 });
