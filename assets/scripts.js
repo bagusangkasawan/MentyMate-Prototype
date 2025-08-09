@@ -15,6 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
         path === '/MentyMate-Prototype' ||
         path === '/MentyMate-Prototype/index.html';
 
+    window.backendUrl = "https://mentalmate-backend.azurewebsites.net";
+    const API_BASE_URL = `${window.backendUrl}/api`;
+
     const chatbotModalElement = document.getElementById('chatbotModal');
     const chatbotNavLink = document.querySelector('.nav-link[data-bs-target="#chatbotModal"], .nav-link[href="#chatbotModal"]');
 

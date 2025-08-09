@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // --- Konfigurasi API ---
-    const backendUrl = "https://mentalmate-backend.azurewebsites.net/";
-    const API_BASE_URL = backendUrl + "/api";
+    const API_BASE_URL = `${window.backendUrl}/api`;
 
     // --- Referensi Elemen DOM ---
     const loadingOverlay = document.getElementById('loadingOverlay');
